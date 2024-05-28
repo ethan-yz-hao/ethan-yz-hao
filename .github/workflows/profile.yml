@@ -14,13 +14,13 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Basic metrics
+      - name: Left
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           output_action: gist
           committer_gist: ${{ secrets.GIST }}
-          filename: basics.svg
+          filename: left.svg
 
           # Options
           template: classic
@@ -32,132 +32,55 @@ jobs:
           plugin_introduction: yes
           plugin_introduction_title: yes
 
-      - name: Isometric commit calendar
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          output_action: gist
-          committer_gist: ${{ secrets.GIST }}
-          filename: iso.svg
-
-          # Options
-          template: classic
-          base: ""
-          config_timezone: America/New_York
-          # Include forks
-          repositories_forks: yes
-          # Isometric commit calendar
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
-          # Coding habits
-          plugin_habits: yes
-          plugin_habits_charts_type: classic
-#          plugin_habits_days: 14
-          plugin_habits_facts: yes
-#          plugin_habits_from: 200
-          plugin_habits_languages_limit: 10
-          plugin_habits_languages_threshold: 0%
-
-      - name: People
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          output_action: gist
-          committer_gist: ${{ secrets.GIST }}
-          filename: people.svg
-
-          # Options
-          template: classic
-          base: ""
-          config_timezone: America/New_York
-          # Include forks
-          repositories_forks: yes
           # People
           plugin_people: yes
           plugin_people_limit: 24
           plugin_people_size: 28
           plugin_people_types: followers, following
 
-      - name: Languages Activity
+          # Starred Topics
+          plugin_topics: yes
+          plugin_topics_mode: icons
+
+      - name: Right
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           output_action: gist
           committer_gist: ${{ secrets.GIST }}
-          filename: lang.svg
+          filename: right.svg
 
           # Options
           template: classic
           base: ""
           config_timezone: America/New_York
-          # Include forks
-          repositories_forks: yes
+
           # Languages activity
           plugin_languages: yes
           plugin_languages_analysis_timeout: 15
           plugin_languages_analysis_timeout_repositories: 7.5
-#          plugin_languages_categories: markup, programming
+          # plugin_languages_categories: markup, programming
           plugin_languages_colors: github
-          plugin_languages_limit: 10
+          plugin_languages_limit: 8
           plugin_languages_recent_categories: markup, programming
-#          plugin_languages_recent_days: 14
-#          plugin_languages_recent_load: 300
+          # plugin_languages_recent_days: 14
+          # plugin_languages_recent_load: 300
           plugin_languages_sections: most-used
           plugin_languages_threshold: 0%
-          plugin_languages_indepth: yes
+          plugin_languages_details: lines
 
-      - name: Commits calendar
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          output_action: gist
-          committer_gist: ${{ secrets.GIST }}
-          filename: cal.svg
+          # Isometric commit calendar
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
 
-          # Options
-          template: classic
-          base: ""
-          config_timezone: America/New_York
-          # Include forks
-          repositories_forks: yes
-          # Commits calendar
-          plugin_calendar: yes
-          plugin_calendar_limit: 2
+          # Coding habits
+          plugin_habits: yes
+          plugin_habits_charts_type: classic
+          # plugin_habits_days: 14
+          plugin_habits_facts: yes
+          # plugin_habits_from: 200
+          plugin_habits_languages_limit: 8
 
-      - name: Recently starred repositories
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          output_action: gist
-          committer_gist: ${{ secrets.GIST }}
-          filename: star.svg
-
-          # Options
-          template: classic
-          base: ""
-          config_timezone: America/New_York
-          # Include forks
-          repositories_forks: yes
           # Recently starred repositories
           plugin_stars: yes
           plugin_stars_limit: 4
-
-      - name: 16 Personalities
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          output_action: gist
-          committer_gist: ${{ secrets.GIST }}
-          filename: person.svg
-
-          # Options
-          template: classic
-          base: ""
-          config_timezone: America/New_York
-          # Include forks
-          repositories_forks: yes
-          # 16 Personalities
-          plugin_16personalities: yes
-          plugin_16personalities_url: ${{ secrets.SIXTEEN_PERSONALITIES_URL }}
-          plugin_16personalities_sections: personality, traits
-          plugin_16personalities_scores: no
