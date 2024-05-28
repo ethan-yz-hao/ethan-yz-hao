@@ -41,6 +41,7 @@ jobs:
           # Starred Topics
           plugin_topics: yes
           plugin_topics_mode: icons
+          plugin_topics_limit: 20
 
           # Commits calendar
           plugin_calendar: yes
