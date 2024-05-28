@@ -1,24 +1,24 @@
-<h1 align="center">Hi 👋, I'm Ethan Hao</h1>
+<div align="center">
 
-[<img align="left" width="390" alt="🦑" src="https://gist.githubusercontent.com/ethan-yz-hao/94405221576f6cc430ba46972fd6f667/raw/basics.svg">](#)
-[<img align="right" width="390" alt="🦑" src="https://gist.githubusercontent.com/ethan-yz-hao/94405221576f6cc430ba46972fd6f667/raw/lang.svg">](#)
-[<img align="right" width="390" alt="🦑" src="https://gist.githubusercontent.com/ethan-yz-hao/94405221576f6cc430ba46972fd6f667/raw/iso.svg">](#)
-[<img align="left" width="390" alt="🦑" src="https://gist.githubusercontent.com/ethan-yz-hao/94405221576f6cc430ba46972fd6f667/raw/people.svg">](#)
-[<img align="right" width="390" alt="🦑" src="https://gist.githubusercontent.com/ethan-yz-hao/94405221576f6cc430ba46972fd6f667/raw/star.svg">](#)
-[<img align="left" width="390" alt="🦑" src="https://gist.githubusercontent.com/ethan-yz-hao/94405221576f6cc430ba46972fd6f667/raw/cal.svg">](#)
-[<img align="right" width="390" alt="🦑" src="https://gist.githubusercontent.com/ethan-yz-hao/94405221576f6cc430ba46972fd6f667/raw/person.svg">](#)
+<h1>Hi 👋, I'm Ethan Hao</h1>
 
-<!--
-**ethan-yz-hao/ethan-yz-hao** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<!-- Flex container -->
+<div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start;">
 
-Here are some ideas to get you started:
+  <!-- Left Column -->
+  <div style="flex: 1 1 390px; display: flex; flex-direction: column; align-items: center;">
+    <img width="390" alt="🦑" src="https://gist.githubusercontent.com/ethan-yz-hao/94405221576f6cc430ba46972fd6f667/raw/basics.svg">
+    <img width="390" alt="🦑" src="https://gist.githubusercontent.com/ethan-yz-hao/94405221576f6cc430ba46972fd6f667/raw/people.svg">
+    <img width="390" alt="🦑" src="https://gist.githubusercontent.com/ethan-yz-hao/94405221576f6cc430ba46972fd6f667/raw/cal.svg">
+  </div>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+  <!-- Right Column -->
+  <div style="flex: 1 1 390px; display: flex; flex-direction: column; align-items: center;">
+    <img width="390" alt="🦑" src="https://gist.githubusercontent.com/ethan-yz-hao/94405221576f6cc430ba46972fd6f667/raw/lang.svg">
+    <img width="390" alt="🦑" src="https://gist.githubusercontent.com/ethan-yz-hao/94405221576f6cc430ba46972fd6f667/raw/iso.svg">
+    <img width="390" alt="🦑" src="https://gist.githubusercontent.com/ethan-yz-hao/94405221576f6cc430ba46972fd6f667/raw/star.svg">
+    <img width="390" alt="🦑" src="https://gist.githubusercontent.com/ethan-yz-hao/94405221576f6cc430ba46972fd6f667/raw/person.svg">
+  </div>
+
+</div>
+</div>
