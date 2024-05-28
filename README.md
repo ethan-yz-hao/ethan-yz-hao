@@ -1,12 +1,12 @@
-## Hi there 👋
+<h1 align="center">Hi 👋, I'm Ethan Hao</h1>
 
 [<img align="left" width="390" alt="🦑" src="https://gist.githubusercontent.com/ethan-yz-hao/94405221576f6cc430ba46972fd6f667/raw/basics.svg">](#)
-[<img align="left" width="390" alt="🦑" src="https://gist.githubusercontent.com/ethan-yz-hao/94405221576f6cc430ba46972fd6f667/raw/iso.svg">](#)
+[<img align="right" width="390" alt="🦑" src="https://gist.githubusercontent.com/ethan-yz-hao/94405221576f6cc430ba46972fd6f667/raw/lang.svg">](#)
+[<img align="right" width="390" alt="🦑" src="https://gist.githubusercontent.com/ethan-yz-hao/94405221576f6cc430ba46972fd6f667/raw/iso.svg">](#)
 [<img align="left" width="390" alt="🦑" src="https://gist.githubusercontent.com/ethan-yz-hao/94405221576f6cc430ba46972fd6f667/raw/people.svg">](#)
-[<img align="left" width="390" alt="🦑" src="https://gist.githubusercontent.com/ethan-yz-hao/94405221576f6cc430ba46972fd6f667/raw/lang.svg">](#)
+[<img align="right" width="390" alt="🦑" src="https://gist.githubusercontent.com/ethan-yz-hao/94405221576f6cc430ba46972fd6f667/raw/star.svg">](#)
 [<img align="left" width="390" alt="🦑" src="https://gist.githubusercontent.com/ethan-yz-hao/94405221576f6cc430ba46972fd6f667/raw/cal.svg">](#)
-[<img align="left" width="390" alt="🦑" src="https://gist.githubusercontent.com/ethan-yz-hao/94405221576f6cc430ba46972fd6f667/raw/star.svg">](#)
-[<img align="left" width="390" alt="🦑" src="https://gist.githubusercontent.com/ethan-yz-hao/94405221576f6cc430ba46972fd6f667/raw/person.svg">](#)
+[<img align="right" width="390" alt="🦑" src="https://gist.githubusercontent.com/ethan-yz-hao/94405221576f6cc430ba46972fd6f667/raw/person.svg">](#)
 
 <!--
 **ethan-yz-hao/ethan-yz-hao** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
