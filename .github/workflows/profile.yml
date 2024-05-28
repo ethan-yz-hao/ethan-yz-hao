@@ -42,6 +42,12 @@ jobs:
           plugin_topics: yes
           plugin_topics_mode: icons
 
+          # Commits calendar
+          plugin_calendar: yes
+          plugin_calendar_limit: 2
+
+          config_order: base.header, introduction, base.activity+community, base.repositories, people, topics, calendar
+
       - name: Right
         uses: lowlighter/metrics@latest
         with:
