@@ -1,5 +1,4 @@
 name: Metrics
-
 on:
     # Schedule updates every 8 hours
     schedule: [{ cron: "0 */8 * * *" }]
