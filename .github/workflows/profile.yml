@@ -15,7 +15,7 @@ jobs:
             contents: write
         steps:
             - name: Left
-              uses: lowlighter/metrics@latest
+              uses: lowlighter/metrics@v3.34
               with:
                   token: ${{ secrets.METRICS_TOKEN }}
                   output_action: gist
@@ -50,7 +50,7 @@ jobs:
                   config_order: base.header, introduction, base.activity+community, base.repositories, people, topics, calendar
 
             - name: Right
-              uses: lowlighter/metrics@latest
+              uses: lowlighter/metrics@v3.34
               with:
                   token: ${{ secrets.METRICS_TOKEN }}
                   output_action: gist
@@ -93,3 +93,9 @@ jobs:
                   # Recently starred repositories
                   plugin_stars: yes
                   plugin_stars_limit: 4
+
+            # Keep this scheduled workflow from being auto-disabled: metrics
+            # commits to a gist, not this repo, so GitHub would disable the cron
+            # after 60 days of no repo activity. This makes a periodic commit.
+            - name: Keepalive
+              uses: gautamkrishnar/keepalive-workflow@v2
