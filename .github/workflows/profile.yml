@@ -14,6 +14,24 @@ jobs:
         permissions:
             contents: write
         steps:
+            # The v3.34 Dockerfile no longer builds (gem install licensed fails on
+            # nokogiri), so don't let the forked action rebuild from source. Derive
+            # from upstream's prebuilt image, drop in the patched habits plugin, and
+            # tag it as the name the forked action expects so it skips its own build.
+            - name: Prepare patched metrics image
+              env:
+                  FORK_SHA: 49527d13d8c4eeee595564ef9c5bb6f83c0975e6
+              run: |
+                  mkdir -p /tmp/metrics-patch
+                  curl -fsSL "https://raw.githubusercontent.com/ethan-yz-hao/metrics/${FORK_SHA}/source/plugins/habits/index.mjs" -o /tmp/metrics-patch/index.mjs
+                  cat > /tmp/metrics-patch/Dockerfile <<'EOF'
+                  FROM ghcr.io/lowlighter/metrics:v3.34
+                  COPY index.mjs /metrics/source/plugins/habits/index.mjs
+                  EOF
+                  docker build -t metrics:forked-3.34.0 /tmp/metrics-patch
+                  docker run --rm --entrypoint grep metrics:forked-3.34.0 -qF "payload?.commits ?? []" /metrics/source/plugins/habits/index.mjs
+                  echo "Patched habits plugin verified inside image"
+
             - name: Left
               uses: ethan-yz-hao/metrics@49527d13d8c4eeee595564ef9c5bb6f83c0975e6 # v3.34 + habits null-guard
               with:
