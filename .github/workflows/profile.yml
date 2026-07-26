@@ -15,7 +15,7 @@ jobs:
             contents: write
         steps:
             - name: Left
-              uses: lowlighter/metrics@v3.34
+              uses: ethan-yz-hao/metrics@49527d13d8c4eeee595564ef9c5bb6f83c0975e6 # v3.34 + habits null-guard
               with:
                   token: ${{ secrets.METRICS_TOKEN }}
                   output_action: gist
@@ -50,7 +50,7 @@ jobs:
                   config_order: base.header, introduction, base.activity+community, base.repositories, people, topics, calendar
 
             - name: Right
-              uses: lowlighter/metrics@v3.34
+              uses: ethan-yz-hao/metrics@49527d13d8c4eeee595564ef9c5bb6f83c0975e6 # v3.34 + habits null-guard
               with:
                   token: ${{ secrets.METRICS_TOKEN }}
                   output_action: gist
